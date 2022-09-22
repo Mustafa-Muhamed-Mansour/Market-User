@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_product"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative_about_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/img_item_product"
+            android:layout_above="@+id/txt_type_product_item_product"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txt_title_item_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txt_price_item_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/txt_title_item_product"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_type_product_item_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/img_item_product"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_quantity_item_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_below="@+id/txt_type_product_item_product"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_cart_item_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_quantity_item_product"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_shopping_cart"
+            app:fabSize="mini"
+            />
+
+
+    </RelativeLayout>
+</layout>

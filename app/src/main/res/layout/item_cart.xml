@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_item_cart"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_title_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/img_item_cart"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_price_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_title_item_cart"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_quantity_item_cart"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textSize="@dimen/_15ssp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_below="@id/txt_price_item_cart"-->
+<!--            />-->
+
+
+        <it.sephiroth.android.library.numberpicker.NumberPicker
+            android:id="@+id/number_picker_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_price_item_cart"
+            style="@style/NumberPicker.Outlined"
+            app:picker_orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_result_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:layout_below="@id/number_picker_item_cart"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send_order_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_result_item_cart"
+            app:backgroundTint="@null"
+            android:text="Send Order"
+            android:textSize="@dimen/_14ssp"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_10sdp"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/img_btn_delete_item_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_result_item_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_delete"
+            android:backgroundTint="@color/white"
+            />
+
+
+    </RelativeLayout>
+</layout>
