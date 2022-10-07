@@ -1,5 +1,4 @@
-# Market-User
-Can the user see the shopping addresses that near on him , add an order and add opinion on the seller if was positive or negative
+# Can the user see the shopping addresses that near on him , add an order and add opinion on the seller if was positive or negative
 
 ## Screen Shoot
 <img src = "https://user-images.githubusercontent.com/53982895/191855237-084d4c73-ed82-4669-927e-e47e17de65c8.png" width = "200" height = "400"> <img src = "https://user-images.githubusercontent.com/53982895/191855240-896c6204-f4d8-4dc8-bb54-bbc571a8288e.png" width = "200" height = "400">
